@@ -1,0 +1,27 @@
+signup -> adduser ->
+
+@Getmapping("/newuser")
+NewUser.jsp 
+	firstName
+	email 
+		submit 
+		
+@Postmapping("/saveuser")
+	db user save 
+	
+	
+@Getmapping("newaddress")
+NewAddress.jsp 
+	addressLine [ ] input type text  
+	UserId [ 1 ]  input type text 
+		submit
+		
+@Postmapping("saveaddress)
+	db address save 
+	user.setAddress(address)
+	user save 
+	
+	 
+	 
+	 
+	 
